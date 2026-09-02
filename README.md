@@ -20,25 +20,6 @@ Power Query M connector for the Greek Customs Authority (AADE) AES (Automated Ex
 
 ---
 
-## Architecture
-
-```
-Token.m
-  └── OAuth2 POST → AADE Keycloak → Bearer token
-        │
-        ├── AES.m      ─┐
-        ├── CB.m        ├── Bearer token injected in Authorization header
-        └── Exported.m ─┘
-              │
-              └── GET /tp-api/v2/search
-                    Paginated by month (12 ranges × N pages × 50 records)
-                    Expand JSON → Filter → Transform → Clean table
-```
-
-**Pagination strategy:** The AADE API caps results per request. To retrieve the full year without hitting limits, requests are split into 12 monthly date ranges. Within each range, `List.Generate` iterates pages until an empty `content` array signals the last page.
-
----
-
 ## Output columns
 
 **AES / Exported:**
