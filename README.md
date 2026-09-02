@@ -4,6 +4,11 @@ Power Query M connector for the Greek Customs Authority (AADE) AES (Automated Ex
 
 ---
 
+
+## Architecture
+
+<img src="workflow.png" width="800"/>
+
 ## Queries
 
 | File | Purpose |
