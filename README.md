@@ -66,3 +66,7 @@ Power Query M connector for the Greek Customs Authority (AADE) AES (Automated Ex
 - AADE AES REST API (`/tp-api/v2/search`)
 - OAuth2 password grant (Keycloak)
 - Excel (host environment)
+
+## License
+
+Copyright (c) 2026 Petros Vachaviolos. All rights reserved. Proprietary; shown here as a portfolio. No use, copying or redistribution without the author's written permission. See [LICENSE.txt](LICENSE.txt).
